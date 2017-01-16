@@ -1,0 +1,15 @@
+package br.com.empresa.banco;
+
+import br.com.empresa.banco.conta.Conta;
+import br.com.empresa.banco.conta.ContaPoupanca;
+
+public class TestaContaRepetida {
+	private static Conta conta1;
+
+	public static void main(String[] args) {
+		conta1 = new ContaPoupanca(100, "Fulano");
+		Conta conta2 = new ContaPoupanca(100, "Sicrano");
+		
+		
+	}
+}

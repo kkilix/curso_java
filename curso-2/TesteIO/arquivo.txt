@@ -1,0 +1,2 @@
+Teste de leitura de arquivo.
+com mais de uma linha

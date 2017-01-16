@@ -1,0 +1,22 @@
+package br.com.empresa.banco;
+
+public class TestaOrdenacao {
+
+	public static void main(String[] args) {
+		ContaPoupanca c1 = new ContaPoupanca();
+	    c1.deposita(100);
+
+	    ContaCorrente c2 = new ContaCorrente();
+	    c2.deposita(200);
+
+	    ContaCorrente c3 = new ContaCorrente();
+	    c3.deposita(300);
+
+	    List contas = new ArrayList();
+	    contas.add(c1);
+	    contas.add(c3);
+	    contas.add(c2);
+
+	}
+
+}

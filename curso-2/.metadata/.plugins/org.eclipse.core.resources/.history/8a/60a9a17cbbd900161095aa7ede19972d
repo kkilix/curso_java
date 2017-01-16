@@ -1,0 +1,28 @@
+package br.com.empresa.banco.conta;
+
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
+
+public class Banco {
+	//private List<Conta> contas = new ArrayList<>();
+	private Map<String, Conta> mapaDeContas = new HashMap<String, Conta>();
+
+	public void adiciona(Conta conta) {
+		//contas.add(conta);
+		mapaDeContas.put(conta.getNome(), conta);
+	}
+
+	public Conta pega(int posicao) {
+		return mapaDeContas.get(posicao);
+	}
+
+	public int getQuantidadeDeContas() {
+		return mapaDeContas.size();
+	}
+	
+	public Conta buscaPorNome(String nome) {
+		return contas.contains(new nome);
+	}
+}

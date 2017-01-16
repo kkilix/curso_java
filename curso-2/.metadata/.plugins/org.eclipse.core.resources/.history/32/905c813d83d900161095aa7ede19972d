@@ -1,0 +1,19 @@
+package TesteIO;
+
+import java.io.*;
+import java.util.Scanner;
+
+public class EditorTexto {
+	public static void main(String[] args) throws IOException {
+		InputStream is = System.in;
+		Scanner entrada = new Scanner(is);
+
+		PrintStream ps = new PrintStream("texto.txt");
+		
+		while (entrada.hasNextLine()) {
+			ps.println(entrada.nextLine());
+		}
+		entrada.close();
+		ps.close();
+	}
+}

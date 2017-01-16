@@ -1,0 +1,9 @@
+package br.com.empresa.banco;
+
+import java.util.Random;
+
+public class TestaOrdenacao2 {
+	public static void main(String[] args) {
+		Random gerador = new Random();
+	}
+}

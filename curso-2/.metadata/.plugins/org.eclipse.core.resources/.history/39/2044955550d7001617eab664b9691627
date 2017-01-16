@@ -1,0 +1,7 @@
+public class Circulo implements AreaCalculavel {
+
+	@Override
+	public double calculaArea() {
+		return 0;
+	}
+}

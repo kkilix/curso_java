@@ -1,0 +1,25 @@
+package br.com.empresa.banco;
+
+import br.com.empresa.banco.conta.Conta;
+import br.com.empresa.banco.conta.ContaPoupanca;
+
+public class TestaOrdenacao {
+
+	public static void main(String[] args) {
+		Conta c1 = new Conta();
+	    c1.deposita(100);
+
+	    ContaPoupanca c2 = new ContaPoupanca();
+	    c2.deposita(200);
+
+	    ContaPoupanca c3 = new ContaPoupanca();
+	    c3.deposita(300);
+
+	    List contas = new ArrayList();
+	    contas.add(c1);
+	    contas.add(c3);
+	    contas.add(c2);
+
+	}
+
+}

@@ -1,0 +1,23 @@
+package br.com.empresa.banco;
+
+import java.util.ArrayList;
+import java.util.List;
+
+import br.com.empresa.banco.conta.Conta;
+import br.com.empresa.banco.conta.ContaPoupanca;
+
+public class TestaOrdenacao {
+
+	public static void main(String[] args) {
+		Conta c1 = new ContaPoupanca(100, "Ze");		
+		Conta c2 = new ContaPoupanca(200, "Mane");		
+		Conta c3 = new ContaPoupanca(300, "Joao");
+
+		List<ContaPoupanca> contas = new ArrayList<>();
+		contas.add(c1);
+		contas.add(c3);
+		contas.add(c2);
+
+	}
+
+}

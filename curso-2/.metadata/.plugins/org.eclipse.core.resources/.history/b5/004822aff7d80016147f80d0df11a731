@@ -1,0 +1,17 @@
+package TesteIO;
+
+import java.io.*;
+import java.util.Scanner;
+
+public class EscrevendoArquivo {
+	public static void main(String[] args) throws IOException {
+		InputStream is = new FileInputStream("arquivo.txt");
+		Scanner entrada = new Scanner(is);
+
+		
+		while (entrada.hasNextLine()) {
+			System.out.println(entrada.nextLine());
+		}
+		entrada.close();
+	}
+}

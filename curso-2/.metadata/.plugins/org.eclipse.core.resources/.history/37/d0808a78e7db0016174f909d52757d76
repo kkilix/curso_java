@@ -1,0 +1,9 @@
+package br.com.empresa.banco;
+
+import java.util.ArrayList;
+
+public class TestaArrayListDecrescente {
+	public static void main(String[] args) {
+		ArrayList<Integer> conjunto = new ArrayList<>();
+	}
+}
